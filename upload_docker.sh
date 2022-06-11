@@ -10,7 +10,7 @@ dockerpath=nguyendt9/projectfour
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login --username nguyendt9 --password Qp123456789@
+docker login
 docker tag projectfour $dockerpath
 
 # Step 3:
