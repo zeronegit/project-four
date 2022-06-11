@@ -1,0 +1,28 @@
+
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 235-244-780
+[2022-06-11 10:46:33,100] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-06-11 10:46:33,109] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-11 10:46:33,114] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-06-11 10:46:33,116] INFO in app: Prediction value:
+[20.35373177134412]
+127.0.0.1 - - [11/Jun/2022 10:46:33] "POST /predict HTTP/1.1" 200 -
+
+---
+NAME                           READY   STATUS    RESTARTS   AGE
+projectfour-5d49bbbdc5-rk5d4   1/1     Running   0          12m
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
